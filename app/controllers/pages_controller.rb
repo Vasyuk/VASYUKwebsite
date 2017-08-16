@@ -1,10 +1,20 @@
 class PagesController < ApplicationController
 
-  def salut
-    @name = params[:name]
-  end
-
   def home
 
   end
+
+  def aproposdemoi
+
+  end
+
+  def mesprojets
+
+  end
+
+  def mecontacter
+
+  end
+
+
 end
