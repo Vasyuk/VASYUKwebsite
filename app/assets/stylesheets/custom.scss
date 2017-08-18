@@ -1,6 +1,25 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body{
+  margin: 0% 1%;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+h3{
+  font-size: 26px;
+  margin: 5% 0% 2% 0%;
+}
+
+li{
+   list-style-type: none;
+}
+
+p, li, a{
+  font-size: 17px;
+  text-align: justify;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -14,4 +33,14 @@
     color: white;
     text-decoration: none;
   }
+}
+
+#photo{
+  width: 100%;
+}
+
+.info{
+  margin: 10%;
+  display: grid;
+  text-align: center;
 }
