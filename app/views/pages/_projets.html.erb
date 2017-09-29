@@ -1,0 +1,19 @@
+<div class = "container" style = "width:80%"  >
+  <div class = "row ">
+      <% @n = 0 %>
+      <% @project.each do |project| %>
+      <div class = "col-md-4 project" id = "big">
+        <%= image_tag(project.nameOfImage, class: 'photoProject') %>
+      </div>
+      <script>
+        $("#big").click(function(){
+          // удаляем у старого элемента, класс   activeClass
+          $("#big").removeClass("col-md-4");
+          // добавляем к ссылки по которой щёлкнули класс activeClass
+          $(this).addClass("col-md-12");
+        });
+      </script>
+      <% end %>
+
+  </div>
+</div>

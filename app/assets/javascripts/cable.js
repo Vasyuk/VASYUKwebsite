@@ -11,3 +11,11 @@
   App.cable = ActionCable.createConsumer();
 
 }).call(this);
+
+
+$(".big").click(function(){
+  // удаляем у старого элемента, класс   activeClass
+  $(".col-md-4").removeClass("col-md-4");
+  // добавляем к ссылки по которой щёлкнули класс activeClass
+  $(this).addClass("col-md-12");
+});

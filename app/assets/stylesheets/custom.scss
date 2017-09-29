@@ -3,7 +3,7 @@
 
 body{
   font-family: 'Hind Siliguri', sans-serif;
-  background-color: black;
+  background-color: #A9A9A9;
   width: 100%;
   color: white;
 }
@@ -48,9 +48,10 @@ p, li, a{
 }
 
 .project{
-  border-width: 1px;
-  border-style: solid;
-  margin-top: 2%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: 1% 0% 1% 0%
 }
 
 .projectButtom{
@@ -59,7 +60,7 @@ p, li, a{
 
 .photoProject{
   width: 100%;
-  height: 240px;
+
 }
 
 
@@ -79,6 +80,7 @@ p, li, a{
   border-left-color: transparent;
   border-right-color: transparent;
   border-top: transparent;
+  margin: 0px;
 }
 
 h3, h4, p, h1{
@@ -93,4 +95,15 @@ h3, h4, p, h1{
 .titreProject{
   font-size: 40px;
   color: white;
+}
+
+.titreContainer{
+  text-align: center;
+  background-color: #696969;
+  margin: 0px;
+  padding: 1%;
+}
+
+.about{
+  margin-top: 6%;
 }

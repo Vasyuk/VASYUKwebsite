@@ -1,20 +1,7 @@
 class PagesController < ApplicationController
 
   def home
-
+      @project = Project.all
   end
-
-  def aproposdemoi
-
-  end
-
-  def mesprojets
-
-  end
-
-  def mecontacter
-
-  end
-
 
 end
