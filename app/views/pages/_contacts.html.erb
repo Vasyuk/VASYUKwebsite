@@ -1,8 +1,23 @@
-<div class = "container" >
-  <div class ="row centerd info">
-    <p>ADRESS : 83, RUE ALBERT SARRAUT</br>VERSAILLES, FRANCE, 78000</p>
-    <p>EMAIL : mikhail.vasyuk@gmail.com</p>
-    <p>GitHub : Vasuk</p>
-    <p>NUMERO : +33633841466</p>
-  </div>
+<div class = "container contacts" >
+  <div class ="row ">
+    <div class = "col-md-4 center-block bI deux qSJ contactsPad">
+      <p>ADRESS : 83, RUE ALBERT SARRAUT</br>VERSAILLES, FRANCE, 78000</p>
+      <p>EMAIL : mikhail.vasyuk@gmail.com</p>
+      <p>GitHub : Vasuk</p>
+      <p>NUMERO : +33633841466</p>
+    </div>
+    <div class = "col-md-6 bI qSJ  contactsPad" >
+      <div class = " center-block ">
+        <%= form_tag("/mailSending", method: "post") do %>
+          <%= label_tag(:name, "Prènom") %>
+          <%= text_field_tag :name, params[:name], class: "form-control"%>
+          <%= label_tag(:email, "Email") %>
+          <%= email_field_tag :email, params[:email], class: "form-control" %>
+          <%= label_tag(:subject, "Sujet") %>
+          <%= text_field_tag :subject, params[:subject], class: "form-control" %>
+          <%= label_tag(:texte, "Texte") %>
+          <%= text_area_tag :texte, params[:texte], class: "form-control" %>
+          <%= submit_tag("Envoyer", class: "btn btn-primary")   %>
+        <% end %>
+    </div>
 </div>

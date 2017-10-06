@@ -1,19 +1,15 @@
-<div class = "container" style = "width:80%"  >
-  <div class = "row ">
-      <% @n = 0 %>
-      <% @project.each do |project| %>
-      <div class = "col-md-4 project" id = "big">
-        <%= image_tag(project.nameOfImage, class: 'photoProject') %>
+<div class = "container" style = "width:80%" >
+  <div class= "row">
+    <div class = "col-md-offset-2 col-md-8 projectCase">
+      <a href="assets/project1.1.png" data-fancybox="images-preview">
+        <img src="assets/project1.1.png" class = "projectImage"/>
+      </a>
+      <div style="display: none;">
+        <a href="assets/project1.2.png" data-fancybox="images-preview"
+        data-thumb="assets/project1.2.png"></a>
+        <a href="assets/project1.3.png" data-fancybox="images-preview"
+        data-thumb="assets/project1.3.png"></a>
       </div>
-      <script>
-        $("#big").click(function(){
-          // удаляем у старого элемента, класс   activeClass
-          $("#big").removeClass("col-md-4");
-          // добавляем к ссылки по которой щёлкнули класс activeClass
-          $(this).addClass("col-md-12");
-        });
-      </script>
-      <% end %>
-
+    </div>
   </div>
 </div>

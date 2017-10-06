@@ -2,12 +2,22 @@
 @import "bootstrap";
 
 body{
-  font-family: 'Hind Siliguri', sans-serif;
-  background-color: #A9A9A9;
+  font-family: 'Contrail One', cursive;
+  background-color: transparent;
   width: 100%;
   color: white;
+  background-image: url('kale-salad.jpg');
 }
 
+
+.container{
+  padding-left: 21%;
+}
+
+a{
+  text-decoration: none !important;
+
+}
 
 li{
    list-style-type: none;
@@ -18,33 +28,11 @@ p, li, a{
   text-align: justify;
 }
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
-}
 
-.photo{
-  width: 100%;
-}
-
-.photoLogo{
-  width: 12%;
-}
-
-.info{
-  margin: 10%;
-  display: grid;
-  text-align: center;
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project{
@@ -64,6 +52,12 @@ p, li, a{
 }
 
 
+
+.contacts{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
 .allProject .col-md-4{
   padding-left: 0px;
   padding-right: 0px;
@@ -77,9 +71,7 @@ p, li, a{
 
 .navbar-default{
   background-color:transparent;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top: transparent;
+  border: none;
   margin: 0px;
 }
 
@@ -97,13 +89,95 @@ h3, h4, p, h1{
   color: white;
 }
 
+.projectImage{
+    width: 100%;
+
+}
+
+.projectCase{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.bI{
+  background-image: url('shattered-island.gif');
+}
+
 .titreContainer{
+  border-radius: 20px;
   text-align: center;
-  background-color: #696969;
-  margin: 0px;
+  background-color: navy;
+  margin: 1%;
   padding: 1%;
 }
 
 .about{
   margin-top: 6%;
+}
+
+.qSJ{
+  border-radius: 5px;
+}
+
+.un{
+  margin-bottom: 2%;
+}
+
+.deux{
+  margin-right: 8%;
+}
+
+.contactsPad{
+  padding: 5%;
+  height: 400px;
+}
+
+/* menu*/
+
+.menu{
+  position: fixed; /* Фиксированное положение */
+  width: 20%;
+  height: 100vh;
+  border-right: 1px dashed #333; /* Параметры рамки */
+}
+
+  #menuh1{
+    text-align: center;
+    padding-top:5%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+  }
+
+  #menusBtn{
+    padding-top: 40%;
+    text-align: center;
+
+  }
+
+
+
+
+
+  #menuADM{
+
+  }
+
+  #menuMP{
+
+  }
+
+  #menuC{
+
+  }
+
+.menuBtn{
+  margin: 10%;
+  padding: 5%;
+  font-family: 'Contrail One', cursive;
+  border: 1px dashed white;
+  border-radius: 20px;
+  a{
+    font-size: 18px;
+    color: white;
+  }
 }
