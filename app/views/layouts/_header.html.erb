@@ -1,14 +1,61 @@
 <div class="menu bI" id = 'menu'>
   <h1 id = "menuh1">Vasyuk Mikhaïl</h1>
-  <div id = "menusBtn">
-    <div class = "menuBtn" id="menuADM">
-      <a href="#aproposdemoi" >A PROPOS DE MOI</a>
+  <div class  = "menusBtn">
+    <div class = "menuBtn btn btn-primary" >
+      <a href="#aproposdemoi">A PROPOS DE MOI</a>
     </div>
-    <div class = "menuBtn" id="menuMP">
+    <div class = "menuBtn btn btn-primary" >
       <a href="#mesprojets">MES PROJETS</a>
     </div>
-    <div class = "menuBtn" id="menuC">
+    <div class = "menuBtn btn btn-primary">
       <a href="#contacts">ME CONTACTER</a>
     </div>
   </div>
+  <div class = "center-block menuLinks">
+    <%= link_to image_tag('facebook-logo-button.png') , 'https://www.facebook.com/misha.vasyuk' %>
+    <%= link_to image_tag('github-logo.png') , 'https://github.com/Vasyuk' %>
+    <%= link_to image_tag('linkedin-logo-button.png') , 'https://www.linkedin.com/in/mikhail-vasyuk/' %>
+  </div>
+  <div class = "menusCvLm">
+    <div class = "menuCvLm btn btn-primary">
+      <a  id="CV">CV</a>
+    </div>
+    <div class = "menuCvLm btn btn-primary">
+      <a id="LM">LM</a>
+    </div>
+  </div>
 </div>
+
+<nav class="navbar navbar-default bI">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to "Vasyuk Mikhaïl", root_path, id: "logo"  %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right" id = "menu">
+        <li><a href="#aproposdemoi">A PROPOS DE MOI</a></li>
+        <li><a href="#mesprojets">MES PROJETS</a></li>
+        <li><a href="#contacts">ME CONTACTER</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<script>
+  $("#CV").click(function(){
+    window.open("assets/CV.pdf")
+  });
+  $("#LM").click(function(){
+    window.open("assets/Lettre de motivation.pdf")
+  });
+</script>

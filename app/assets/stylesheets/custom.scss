@@ -1,6 +1,42 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@media (max-width: 767px){
+  .menu{
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+  .container{
+    padding-left: 0%;
+  }
+}
+
+@media (min-width: 768px){
+  .menu{
+    display: none;
+  }
+  .navbar{
+    display: block;
+  }
+  .container{
+    padding-left: 0%;
+  }
+}
+
+@media (min-width: 992px){
+  .menu{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
+  .container{
+    padding-left: 21%;
+  }
+}
+
 body{
   font-family: 'Contrail One', cursive;
   background-color: transparent;
@@ -10,9 +46,7 @@ body{
 }
 
 
-.container{
-  padding-left: 21%;
-}
+
 
 a{
   text-decoration: none !important;
@@ -20,7 +54,9 @@ a{
 }
 
 li{
-   list-style-type: none;
+  list-style-type: none;
+  display: inline; /* Отображать как строчный элемент */
+  margin-right: 5px; /* Отступ слева */
 }
 
 p, li, a{
@@ -28,6 +64,53 @@ p, li, a{
   text-align: justify;
 }
 
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 2.4em;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  padding-top: 2px;
+  padding-left: 10px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.menuLinks{
+  margin: 5% auto;
+  width: 110px;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: yellowgreen;
+}
+
+.cvLm{
+  width: 100px;
+  background-color: transparent;
+}
+
+.imageCompBig{
+  width: 40%;
+}
+
+.imageComp{
+  width: 10%;
+}
+
+.menuLink{
+  margin-right: 2%;
+}
+
+.global {
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%; /* largeur obligatoire pour être centré */
+}
 
 .center-block {
     display: block;
@@ -104,7 +187,7 @@ h3, h4, p, h1{
 }
 
 .titreContainer{
-  border-radius: 20px;
+  border-radius: 5px;
   text-align: center;
   background-color: navy;
   margin: 1%;
@@ -127,6 +210,9 @@ h3, h4, p, h1{
   margin-right: 8%;
 }
 
+.trois{
+  margin-top: 2%;
+}
 .contactsPad{
   padding: 5%;
   height: 400px;
@@ -148,36 +234,46 @@ h3, h4, p, h1{
     font-size: 40px;
   }
 
-  #menusBtn{
+  .menusBtn{
     padding-top: 40%;
     text-align: center;
-
   }
 
+.menusCvLm{
+  padding-top: 15%;
+  text-align: center;
+}
 
+.btn-primary:hover{
+  background-image: url('kale-salad.jpg');
+}
 
-
-
-  #menuADM{
-
+.menuCvLm{
+  margin: 2%;
+  font-family: 'Contrail One', cursive;
+  border: 1px groove red;
+  width: 140px;
+  a{
+    padding: 5%;
+    font-size: 20px;
+    color: white;
+    height: 100%;
+    display: block;
+    text-align: center;
   }
-
-  #menuMP{
-
-  }
-
-  #menuC{
-
-  }
+}
 
 .menuBtn{
-  margin: 10%;
-  padding: 5%;
+  margin: 7%;
   font-family: 'Contrail One', cursive;
-  border: 1px dashed white;
-  border-radius: 20px;
+  border: 1px groove yellowgreen;
+  width: 180px;
   a{
-    font-size: 18px;
+    padding: 5%;
+    font-size: 20px;
     color: white;
+    height: 100%;
+    display: block;
+    text-align: center;
   }
 }
